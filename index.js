@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
     res.send("Hello, API!");
 });
 
+app.get("/api/request", (req, res) => {
+    res.json(req.query);
+});
+
 // Define a route handler for a sample API endpoint
 app.get("/api/users", (req, res) => {
     // Sample data (replace with real data from a database)
