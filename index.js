@@ -12,6 +12,10 @@ app.get("/api/request", (req, res) => {
     res.json(req.query);
 });
 
+app.post("/api/users",(req,res) => {
+    console.log(`Visited`);
+});
+
 // Define a route handler for a sample API endpoint
 app.get("/api/users", (req, res) => {
     // Sample data (replace with real data from a database)
